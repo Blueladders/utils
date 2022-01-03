@@ -1,0 +1,17 @@
+Postgres Database Setup
+
+pull down an image for the latest stable release of Postgres, simply run
+
+docker pull postgres
+
+
+Create a volumes folder (we can give the folder any name we like) in my home directory and then create subfolders for each of the applications I need to create data
+volume mount points for.
+
+mkdir -p $HOME/docker/volumes/postgres
+
+
+Starting the Postgres container is as simple as running the docker run command
+
+docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
+
