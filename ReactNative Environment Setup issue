@@ -1,9 +1,9 @@
-How to resolve this ADB server version doesn’t match this client error in Android?
+---->  How to resolve this ADB server version doesn’t match this client error in Android?
 
 https://thedarksource.com/how-to-solve-this-adb-server-version-doesnt-match-this-client-error-in-android/
 
 
-Error message "error:0308010C:digital envelope routines::unsupported"
+----> Error message "error:0308010C:digital envelope routines::unsupported"
 
 export NODE_OPTIONS=--openssl-legacy-provider
 
